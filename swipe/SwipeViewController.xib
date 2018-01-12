@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeViewController">
+            <connections>
+                <outlet property="swipe" destination="Ma2-HC-5Jh" id="xSS-mI-IZV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma2-HC-5Jh" customClass="SMSwipeView">
+                    <rect key="frame" x="20" y="297" width="335" height="96"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ma2-HC-5Jh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="b5b-Mx-MPP"/>
+                <constraint firstAttribute="trailing" secondItem="Ma2-HC-5Jh" secondAttribute="trailing" constant="20" id="bAw-xP-N8l"/>
+                <constraint firstItem="Ma2-HC-5Jh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="297" id="vbq-N2-hau"/>
+                <constraint firstAttribute="bottom" secondItem="Ma2-HC-5Jh" secondAttribute="bottom" constant="274" id="xbb-Gu-WAY"/>
+            </constraints>
+            <point key="canvasLocation" x="52.5" y="202.5"/>
+        </view>
+    </objects>
+</document>
